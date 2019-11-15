@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import bonch.dev.networkdz.R
 import bonch.dev.networkdz.models.Album_post
-import bonch.dev.networkdz.models.Photo_post
 
 class Albums_adapter(listik: List<Album_post>, val context: Context) :
     RecyclerView.Adapter<Albums_adapter.ItemPostHolder>() {
