@@ -19,7 +19,7 @@ interface RetrofitService {
     suspend fun deleteAlbumsPosts(@Path("id") id:Int) : Response<*>
 
     @GET("/photos?albumId=1")
-    suspend fun getPhotoPosts() : Response<List<Unit_photo>>
+    suspend fun getPhotoPosts() : Response<List<Photo_post>>
 
     @POST("/posts")
     suspend fun postPosts(@Field("title") title:String, @Field("body") body:String) : Response<*>

@@ -8,7 +8,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import bonch.dev.networkdz.R
-import bonch.dev.networkdz.models.Photo_post
 import bonch.dev.networkdz.models.Unit_photo
 import com.bumptech.glide.Glide
 
@@ -18,7 +17,7 @@ class Photo_adapter(listik: List<Unit_photo>, val context: Context) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemPostHolder {
         return ItemPostHolder(
             LayoutInflater.from(context)
-                .inflate(R.layout.photo_item_post , parent, false)
+                .inflate(R.layout.photo_item_post, parent, false)
         )
     }
 
@@ -37,6 +36,7 @@ class Photo_adapter(listik: List<Unit_photo>, val context: Context) :
 
         fun bind(albumpost: Unit_photo) {
             //Glide.with(urlPostTextView).load(albumpost.url).into(urlPostTextView)
+            //urlPostTextView.setImageDrawable(albumpost.bitMap)
             idPostTextView.text = albumpost.id.toString()
             titlePostTextView.text = albumpost.title
         }
